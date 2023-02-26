@@ -11,18 +11,31 @@
         <h1>Welcome to my Phone Hunter</h1>
     </header>
     <main>
+
+        <!-- search field -->
         <section>
             <div class="mb-3 w-50">
                 <input id="search-field" type="email" class="form-control mb-2" id="exampleFormControlInput1" placeholder="Search your phone">
                 <div id="btn-search" class="btn btn-primary">Search</div>
               </div>
         </section>
+
+        <!-- card -->
         <section>
                 <div id="phone-container" class="row row-cols-1 row-cols-md-3 g-4">
                     </div>
                     <div id="no-found-message" class="mt-4 d-none">
                         <h3 class="text-container">No Phone Found. Please try a new search</h3>
                     </div>
+        </section>
+
+        <!-- loader -->
+        <section id="loader" class="d-none">
+            <div style="height: 300px;" class="d-flex justify-content-center align-items-center">
+                <div class="spinner-border text-success" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </div>
         </section>
     </main>
 
